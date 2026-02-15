@@ -1,4 +1,4 @@
-# Privacy Policy
+const e=`# Privacy Policy
 
 _Last updated: January 2025_
 
@@ -32,3 +32,4 @@ adequate safeguards under GDPR.
 
 ---
 For questions, email **privacy@cleanbeaches.gr**. We will update this policy as the organization formalizes its governance. 
+`;export{e as default};

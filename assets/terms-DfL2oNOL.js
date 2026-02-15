@@ -1,4 +1,4 @@
-# Terms of Service
+const e=`# Terms of Service
 
 _Last updated: January 2025_
 
@@ -28,3 +28,4 @@ Any disputes will be resolved in the courts of Athens, Greece.
 ---
 Questions? Email **hello@cleanbeaches.gr**. These terms will evolve as we finalize our AMKE registration and launch
 additional services.
+`;export{e as default};

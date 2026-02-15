@@ -36,6 +36,7 @@ Add new legal pages by dropping Markdown files into `src/content/legal/` and lin
 Add new operations/gallery cards via the data modules under `src/data/` to keep components clean.
 
 ## Deployment
+### AWS (S3 + CloudFront)
 The static site is deployed to an S3 bucket fronted by CloudFront. The helper script assumes the `.env` file contains:
 
 ```
@@ -51,6 +52,19 @@ Deploy via:
 ```
 The script installs dependencies (to ensure CI/CD parity), builds the production bundle, syncs `dist/` to the bucket with
 `aws s3 sync --delete`, and issues a CloudFront invalidation.
+
+### GitHub Pages
+- Workflow: `.github/workflows/deploy.yml`
+- Trigger: every push to `main` (plus manual dispatch)
+- Flow: build with `npm ci && npm run build`, upload artifact, and publish through `actions/deploy-pages`
+- Base path: set through `VITE_PUBLIC_BASE_PATH=/cleanbeaches/` during the build step so assets resolve under project pages
+
+To preview the GitHub Pages output locally, mimic the workflow by running:
+```bash
+VITE_PUBLIC_BASE_PATH=/cleanbeaches/ npm run build
+```
+
+By default (e.g., AWS or local dev) the base path falls back to `/`, so no extra config is required.
 
 ## Roadmap
 - Wire Stripe Checkout + SEPA donations once AMKE registration is finalized

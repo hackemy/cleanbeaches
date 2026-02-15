@@ -8,7 +8,7 @@
         and data transparency to remove thousands of kilograms of trash from vulnerable shores.
       </p>
       <div class="hero-cta">
-        <button class="solid-button">Donate now</button>
+        <a class="solid-button" href="#donate">Donate now</a>
         <a class="ghost-button" href="#roadmap">See our roadmap</a>
       </div>
       <div class="hero-stats">
@@ -124,7 +124,8 @@
 }
 
 button,
-.ghost-button {
+.ghost-button,
+.solid-button {
   border-radius: 999px;
   font-weight: 600;
   padding: 0.75rem 1.8rem;

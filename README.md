@@ -25,14 +25,15 @@ npm run dev -- --open
 ### Project Structure Highlights
 ```
 src/
-  components/       // Reusable UI primitives (hero, metrics, gallery, markdown renderer)
+  components/       // Reusable UI primitives (hero, metrics, gallery, markdown renderer, forms)
   content/legal/    // Markdown files for privacy policy, terms, etc.
-  data/gallery.js   // Centralized dataset powering gallery & previews
+  data/             // Shared datasets (gallery photos, operations)
   router/           // Public routes only (no auth needed yet)
   views/            // Page-level layouts assembling components
 ```
 
 Add new legal pages by dropping Markdown files into `src/content/legal/` and linking to `/legal/<slug>`.
+Add new operations/gallery cards via the data modules under `src/data/` to keep components clean.
 
 ## Deployment
 The static site is deployed to an S3 bucket fronted by CloudFront. The helper script assumes the `.env` file contains:

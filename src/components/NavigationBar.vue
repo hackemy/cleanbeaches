@@ -16,7 +16,7 @@
 
     <div class="nav-cta">
       <a class="ghost-button" href="#impact">See impact</a>
-      <button class="solid-button">Donate</button>
+      <a class="solid-button" href="#donate">Donate</a>
     </div>
   </header>
 </template>
@@ -103,7 +103,8 @@ import { RouterLink } from 'vue-router'
 }
 
 button,
-.ghost-button {
+.ghost-button,
+.solid-button {
   border-radius: 999px;
   font-weight: 600;
   padding: 0.55rem 1.4rem;

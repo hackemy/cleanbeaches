@@ -1,5 +1,5 @@
 <template>
-  <section class="cta">
+  <section id="donate" class="cta">
     <div>
       <p class="eyebrow">Fund the fleet</p>
       <h2>Every €10,400 funds one full beach clean with telemetry + recycling.</h2>

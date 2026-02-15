@@ -1,43 +1,60 @@
 # CleanBeaches Greece Web Platform
 
-CleanBeaches Greece is a nonprofit initiative focused on restoring and protecting the coastlines of Greece through large-scale, systematic, and transparent beach-cleaning operations. This repository hosts the modern fundraising and impact website that will power our outreach, volunteer coordination, and donation funnels.
+CleanBeaches Greece is an AMKE-grade nonprofit focused on engineering systematic, measurable coastal cleanup programs
+across the Greek islands and mainland. This repository hosts the public-facing Vue 3 application that powers fundraising,
+impact storytelling, and transparency reporting.
 
-## Vision
-- **Real impact**: Track kilograms of waste removed, stretches of coastline cleaned, and volunteer participation.
-- **Full transparency**: Publish budgets, project status, and donor reports in real time.
-- **World-class UX**: Deliver an Airbnb-quality experience built with Vue.js, optimized for both desktop and mobile.
+## Stack
+- [Vue 3](https://vuejs.org/) with the Composition API and `<script setup>`
+- [Vue Router](https://router.vuejs.org/) for public routes (mission, gallery, legal)
+- [Vite](https://vitejs.dev/) build pipeline with modern ES modules
+- Markdown-driven legal content rendered via a lightweight presenter component
+- `deploy.sh` helper to compile the site and push static assets to S3 → CloudFront (eu-central-1)
 
-## Tech Stack (Planned)
-- Vue.js + Vite for the frontend experience
-- Tailwind CSS for design system consistency
-- Stripe integration for international donations (one-time & recurring)
-- AWS S3 + CloudFront for global hosting
-- GitHub Actions for CI/CD and linting
+## Local Development
+```bash
+# Install dependencies
+npm install
 
-## Getting Started
-1. Clone the repository using the dedicated SSH alias:
-   ```bash
-   git clone git@github-cleanbeaches:hackemy/cleanbeaches.git code/
-   ```
-2. Install dependencies (package manifest coming soon):
-   ```bash
-   pnpm install
-   # or npm install / yarn install depending on the final toolchain
-   ```
-3. Run the local development server:
-   ```bash
-   pnpm dev
-   ```
+# Run the dev server with hot module reload
+npm run dev -- --open
+
+# Lint / type-check hooks can be added later
+```
+
+### Project Structure Highlights
+```
+src/
+  components/       // Reusable UI primitives (hero, metrics, gallery, markdown renderer)
+  content/legal/    // Markdown files for privacy policy, terms, etc.
+  data/gallery.js   // Centralized dataset powering gallery & previews
+  router/           // Public routes only (no auth needed yet)
+  views/            // Page-level layouts assembling components
+```
+
+Add new legal pages by dropping Markdown files into `src/content/legal/` and linking to `/legal/<slug>`.
+
+## Deployment
+The static site is deployed to an S3 bucket fronted by CloudFront. The helper script assumes the `.env` file contains:
+
+```
+S3_BUCKET=s3://your-target-bucket
+CLOUDFRONT_DISTRIBUTION_ID=XXXXXXXXXXXX
+AWS_PROFILE=cleanbeaches
+AWS_REGION=eu-central-1
+```
+
+Deploy via:
+```bash
+./deploy.sh
+```
+The script installs dependencies (to ensure CI/CD parity), builds the production bundle, syncs `dist/` to the bucket with
+`aws s3 sync --delete`, and issues a CloudFront invalidation.
 
 ## Roadmap
-- [ ] Finalize brand assets and UI kit
-- [ ] Scaffold Vue.js application with routing, layouts, and design tokens
-- [ ] Implement donation flow with Stripe Checkout + SEPA
-- [ ] Build impact dashboard (beaches cleaned, kg collected, volunteer hours)
-- [ ] Publish transparency reports and governance documents
+- Wire Stripe Checkout + SEPA donations once AMKE registration is finalized
+- Build transparency dashboard with live KPIs (kg collected, beaches cleaned, cost per km)
+- Connect to municipal + EU funding applications for recurring reporting
+- Extend gallery with authenticated uploads for on-site crews
 
-## Governance & Compliance
-CleanBeaches Greece will operate as an Αστική Μη Κερδοσκοπική Εταιρεία (ΑΜΚΕ). All code, infrastructure, and financial flows are designed with legal compliance, auditing, and donor trust in mind.
-
----
 "Clean beaches. Real impact. No excuses."

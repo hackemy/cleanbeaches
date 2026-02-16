@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import GeoMediaView from '@/views/GeoMediaView.vue'
 import ProblemView from '@/views/ProblemView.vue'
+import DonateView from '@/views/DonateView.vue'
 
 const LegalView = () => import('@/views/LegalView.vue')
 
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/evidence-map',
       name: 'evidence-map',
       component: GeoMediaView,
+    },
+    {
+      path: '/donate',
+      name: 'donate',
+      component: DonateView,
     },
     {
       path: '/legal/:slug',

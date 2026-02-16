@@ -9,11 +9,15 @@
       </p>
     </div>
     <div class="cta-actions">
-      <button class="solid-button">Sponsor a cleanup</button>
+      <RouterLink class="solid-button" to="/donate">Sponsor a cleanup</RouterLink>
       <a class="ghost-button" href="mailto:fundraising@cleanbeaches.gr">Talk to us</a>
     </div>
   </section>
 </template>
+
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <style scoped>
 .cta {

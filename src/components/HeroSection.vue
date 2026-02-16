@@ -8,7 +8,7 @@
         and data transparency to remove thousands of kilograms of trash from vulnerable shores.
       </p>
       <div class="hero-cta">
-        <a class="solid-button" href="#donate">Donate now</a>
+        <RouterLink class="solid-button" to="/donate">Donate now</RouterLink>
         <a class="ghost-button" href="#roadmap">See our roadmap</a>
       </div>
       <div class="hero-stats">
@@ -33,6 +33,10 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <style scoped>
 .hero {

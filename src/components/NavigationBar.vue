@@ -18,7 +18,7 @@
 
     <div class="nav-cta">
       <a class="ghost-button" href="#impact">See impact</a>
-      <a class="solid-button" href="#donate">Donate</a>
+      <RouterLink to="/donate" class="solid-button">Donate</RouterLink>
     </div>
   </header>
 </template>

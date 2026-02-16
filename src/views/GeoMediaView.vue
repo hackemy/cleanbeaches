@@ -4,8 +4,8 @@
       <p class="eyebrow">Incident tracking</p>
       <h1>Map every polluted shoreline before we clean it.</h1>
       <p>
-        Upload geo-tagged photos to <code>public/media/</code>, log their coordinates in <code>src/data/geoMedia.js</code>,
-        and the map will update automatically on the next deploy. Each pin links evidence to municipal escalations.
+        Every pin comes from the evidence ingestion pipeline: drop EXIF-intact files into the secure source folder, run the
+        sync script, and we publish proof for municipalities and EU escalation.
       </p>
     </div>
     <GeoMediaMap />

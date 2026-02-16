@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import GalleryView from '@/views/GalleryView.vue'
+import GeoMediaView from '@/views/GeoMediaView.vue'
 
 const LegalView = () => import('@/views/LegalView.vue')
 
@@ -16,6 +17,11 @@ const router = createRouter({
       path: '/gallery',
       name: 'gallery',
       component: GalleryView,
+    },
+    {
+      path: '/evidence-map',
+      name: 'evidence-map',
+      component: GeoMediaView,
     },
     {
       path: '/legal/:slug',

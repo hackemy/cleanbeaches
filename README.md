@@ -25,15 +25,27 @@ npm run dev -- --open
 ### Project Structure Highlights
 ```
 src/
-  components/       // Reusable UI primitives (hero, metrics, gallery, markdown renderer, forms)
+  components/       // Reusable UI primitives (hero, metrics, gallery, markdown renderer, forms, maps)
   content/legal/    // Markdown files for privacy policy, terms, etc.
-  data/             // Shared datasets (gallery photos, operations)
+  data/             // Shared datasets (gallery photos, operations, geo media pins)
   router/           // Public routes only (no auth needed yet)
   views/            // Page-level layouts assembling components
 ```
 
 Add new legal pages by dropping Markdown files into `src/content/legal/` and linking to `/legal/<slug>`.
 Add new operations/gallery cards via the data modules under `src/data/` to keep components clean.
+
+### Geo-tagged Evidence Workflow
+1. Drop photo evidence into `public/media/` (retain descriptive filenames, e.g., `2025-02-16-naxos-harbor.jpg`).
+2. Append an entry to `src/data/geoMedia.js` with:
+   - `id`: unique slug (date + location)
+   - `title`, `description`, `capturedAt`
+   - `coords: { lat, lng }` pulled from the iPhone metadata
+   - `photo`: `/media/<filename>`
+   - optional `notes: []`
+3. Commit/push — the `/evidence-map` page will render the pins automatically on the next deploy.
+
+Remember: assets from `public/` are copied verbatim into both the AWS and GitHub Pages deployments, so high-res media belongs there.
 
 ## Deployment
 ### AWS (S3 + CloudFront)

@@ -11,6 +11,7 @@
     <nav class="nav-links">
       <RouterLink to="/" class="nav-link">Mission</RouterLink>
       <RouterLink to="/gallery" class="nav-link">Gallery</RouterLink>
+      <RouterLink to="/evidence-map" class="nav-link">Map</RouterLink>
       <RouterLink :to="{ name: 'legal', params: { slug: 'privacy' } }" class="nav-link">Legal</RouterLink>
     </nav>
 

@@ -12,7 +12,7 @@
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 import L from 'leaflet'
-import geoMedia from '@/data/geoMedia'
+import geoMedia from '@/data/geoMedia.json'
 import 'leaflet/dist/leaflet.css'
 
 const mapRef = ref(null)

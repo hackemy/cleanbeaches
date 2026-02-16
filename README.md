@@ -35,15 +35,16 @@ src/
 Add new legal pages by dropping Markdown files into `src/content/legal/` and linking to `/legal/<slug>`.
 Add new operations/gallery cards via the data modules under `src/data/` to keep components clean.
 
-### Geo-tagged Evidence Workflow
-1. Drop photo evidence into `public/media/` (retain descriptive filenames, e.g., `2025-02-16-naxos-harbor.jpg`).
-2. Append an entry to `src/data/geoMedia.js` with:
-   - `id`: unique slug (date + location)
-   - `title`, `description`, `capturedAt`
-   - `coords: { lat, lng }` pulled from the iPhone metadata
-   - `photo`: `/media/<filename>`
-   - optional `notes: []`
-3. Commit/push — the `/evidence-map` page will render the pins automatically on the next deploy.
+### “The Problem” Gallery
+- Upload raw JPGs into `public/problem-media/`.
+- Describe them in `src/data/problemCases.js` (id, title, description, relative path).
+- The `/problem` route automatically renders the gallery.
+
+### Geo-tagged Evidence Map Workflow
+1. Drop EXIF-intact photos into `public/evidence-source/` (committed to `main`).
+2. Run `npm run sync:evidence` to parse GPS + timestamp data and rebuild `src/data/geoMedia.json`.
+3. Optionally edit the generated JSON to add better titles/descriptions/notes.
+4. Commit/push — the `/evidence-map` page will render the pins automatically on the next deploy.
 
 Remember: assets from `public/` are copied verbatim into both the AWS and GitHub Pages deployments, so high-res media belongs there.
 

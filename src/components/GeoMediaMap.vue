@@ -1,7 +1,6 @@
 <template>
   <section class="geo-map">
     <div class="section-heading">
-      <p class="eyebrow">Ground truth</p>
       <h2>Photo evidence map</h2>
       <p>Each pin represents an iPhone geo-tagged photo uploaded to the media gallery.</p>
     </div>

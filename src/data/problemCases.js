@@ -38,7 +38,7 @@ const problemCases = [
   {
     id: 'voula-cup-07',
     title: 'Plastic coffee cup in Posidonia',
-    description: 'Single-use coffee cup wedged into dried Posidonia, baking under the Voula sun.',
+    description: 'Single-use coffee cup wedged into dried Posidonia near Saronida.',
     photo: 'problem-media/voula-cup-07.jpg',
   },
 ]

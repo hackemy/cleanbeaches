@@ -35,6 +35,12 @@ const problemCases = [
     description: 'Urban shoreline promenade inundated with seaweed and debris, blocking public access.',
     photo: 'problem-media/voula-promenade-06.jpg',
   },
+  {
+    id: 'voula-cup-07',
+    title: 'Plastic coffee cup in Posidonia',
+    description: 'Single-use coffee cup wedged into dried Posidonia, baking under the Voula sun.',
+    photo: 'problem-media/voula-cup-07.jpg',
+  },
 ]
 
 export default problemCases

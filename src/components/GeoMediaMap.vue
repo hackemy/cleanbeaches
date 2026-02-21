@@ -29,11 +29,22 @@ onMounted(() => {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(mapInstance)
 
+  const markers = []
+
   geoMedia.forEach((entry) => {
-    const marker = L.marker([entry.coords.lat, entry.coords.lng]).addTo(mapInstance)
+    const marker = L.circleMarker([entry.coords.lat, entry.coords.lng], {
+      radius: 7,
+      color: '#0ea5e9',
+      weight: 2,
+      opacity: 1,
+      fillColor: '#0ea5e9',
+      fillOpacity: 0.25,
+    }).addTo(mapInstance)
+
     const notesList = entry.notes?.length
       ? `<ul>${entry.notes.map((note) => `<li>${note}</li>`).join('')}</ul>`
       : ''
+
     marker.bindPopup(`
       <div class="popup">
         <strong>${entry.title}</strong><br />
@@ -44,7 +55,14 @@ onMounted(() => {
         <p class="coords">${entry.coords.lat.toFixed(4)}, ${entry.coords.lng.toFixed(4)}</p>
       </div>
     `)
+
+    markers.push(marker)
   })
+
+  if (markers.length > 0) {
+    const group = L.featureGroup(markers)
+    mapInstance.fitBounds(group.getBounds().pad(0.3))
+  }
 })
 
 onBeforeUnmount(() => {
@@ -84,5 +102,13 @@ onBeforeUnmount(() => {
 .coords {
   font-size: 0.8rem;
   color: #475569;
+}
+
+:global(.leaflet-interactive) {
+  transition: transform 0.15s ease, r 0.15s ease;
+}
+
+:global(.leaflet-interactive:hover) {
+  transform: scale(1.15);
 }
 </style>

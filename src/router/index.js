@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import GeoMediaView from '@/views/GeoMediaView.vue'
@@ -8,7 +8,8 @@ import DonateView from '@/views/DonateView.vue'
 const LegalView = () => import('@/views/LegalView.vue')
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  // Hash history works reliably on GitHub Pages and still behaves as a SPA.
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',

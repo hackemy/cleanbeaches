@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      ;(function () {
+        // Simple SPA fallback for GitHub Pages.
+        // If the user hits /cleanbeaches/some/path directly, this 404 is served.
+        // We rewrite to /cleanbeaches/#/some/path so the Vue app can handle it.
+        var base = '/cleanbeaches'
+        var full = window.location.pathname
+        var rest = full.indexOf(base) === 0 ? full.slice(base.length) : full
+
+        // Normalise leading slash and preserve query/hash.
+        rest = rest.replace(/^\/+/, '')
+        var target = base + '/#/' + rest + window.location.search + window.location.hash
+
+        // If we somehow land here from an already-hash URL, just go home.
+        if (!rest) {
+          target = base + '/'
+        }
+
+        window.location.replace(target)
+      })()
+    </script>
+  </body>
+</html>

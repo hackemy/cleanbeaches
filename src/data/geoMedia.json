@@ -3,28 +3,31 @@
     "id": "sample-vouliagmeni-20250215",
     "title": "Vouliagmeni litter sweep",
     "description": "Plastic clusters across the south breakwater documented prior to cleanup.",
-    "capturedAt": "2025-02-15T09:32:00+02:00",
+    "location": "Vouliagmeni, Attica",
+    "capturedAt": "2025-12-27T14:56:06+02:00",
     "coords": {
-      "lat": 37.8096,
-      "lng": 23.7762
+      "lat": 37.691283,
+      "lng": 23.452586
     },
-    "photo": "/media/placeholder.jpg",
+    "photo": "problem-media/vouliagmeni-debris-01.jpg",
+    "showInGallery": true,
     "notes": [
-      "iPhone 17 Pro Max metadata",
-      "Sea state calm",
-      "Reported to Municipality of Vari-Voula-Vouliagmeni"
+      "Extracted from HEIC EXIF via ExifTool",
+      "South breakwater pilot evidence point"
     ]
   },
   {
     "id": "voula-cup-07",
     "title": "Plastic coffee cup in Posidonia",
     "description": "Single-use coffee cup embedded in dried Posidonia near Saronida.",
-    "capturedAt": "2026-02-16T00:00:00+02:00",
+    "location": "Saronida, Attica",
+    "capturedAt": "2026-02-16T10:48:05+02:00",
     "coords": {
       "lat": 37.74793042220487,
       "lng": 23.904861990932236
     },
     "photo": "problem-media/voula-cup-07.jpg",
+    "showInGallery": true,
     "notes": [
       "Coordinates provided manually",
       "Evidence from Saronida coastline"

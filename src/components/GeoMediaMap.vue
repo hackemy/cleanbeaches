@@ -1,9 +1,5 @@
 <template>
   <section class="geo-map">
-    <div class="section-heading">
-      <h2>Photo evidence map</h2>
-      <p>Each pin represents an iPhone geo-tagged photo uploaded to the media gallery.</p>
-    </div>
     <div ref="mapRef" class="map" aria-label="Geo-referenced pollution evidence map"></div>
   </section>
 </template>
@@ -74,12 +70,12 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .geo-map {
-  padding: 3rem 2rem;
+  padding: 0 2rem 3rem;
 }
 
 .map {
   width: 100%;
-  min-height: 520px;
+  min-height: calc(100vh - 140px);
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
@@ -90,7 +86,7 @@ onBeforeUnmount(() => {
 }
 
 .popup {
-  max-width: 240px;
+  max-width: 260px;
 }
 
 .popup img {

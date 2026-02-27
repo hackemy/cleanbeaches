@@ -1,12 +1,12 @@
 {
   "site": {
-    "name": "CleanBeaches Greece",
-    "tagline": "Clean beaches. Real impact.",
+    "name": "Καθαρές Παραλίες",
+    "tagline": "Γιάτι η καθαριότητα είναι η μισή αρχοντιά!",
     "legalEntity": "Αστική Μη Κερδοσκοπική Εταιρεία (υπό σύσταση)",
     "regions": "Athens · Cyclades · Dodecanese",
     "logo": "🏝️",
-    "email": "hello@cleanbeaches.gr",
-    "fundraisingEmail": "fundraising@cleanbeaches.gr",
+    "email": "hello@paralies.org",
+    "fundraisingEmail": "fundraising@paralies.org",
     "phone": "+30 210 000 0000 (HQ)",
     "social": [
       { "platform": "instagram", "url": "https://instagram.com" },
@@ -41,7 +41,7 @@
   "hero": {
     "badge": "700 tonnes of plastic enter Greek waters every year",
     "headline": "We are building the fleet to <accent>stop it.</accent>",
-    "body": "CleanBeaches Greece deploys mechanical cleaning fleets, coordinates volunteer operations, and publishes every result. Transparent. Measurable. Unstoppable.",
+    "body": "paralies.org deploys mechanical cleaning fleets, coordinates volunteer operations, and publishes every result. Transparent. Measurable. Unstoppable.",
     "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "imageAlt": "Clean beach in the Cyclades",
     "badgeOverlay": "Next cleanup: Milos, Cyclades",
@@ -137,14 +137,14 @@
         "color": "from-ocean-400 to-ocean-600"
       },
       {
-        "quote": "CleanBeaches gave Paros something no municipal budget could: a transparent, measurable system that our citizens actually trust. The data they publish has helped us secure EU funding.",
+        "quote": "paralies.org gave Paros something no municipal budget could: a transparent, measurable system that our citizens actually trust. The data they publish has helped us secure EU funding.",
         "name": "Dimitris P.",
         "role": "Deputy Mayor, Paros",
         "initials": "DP",
         "color": "from-sky-400 to-sky-600"
       },
       {
-        "quote": "We sponsor dozens of environmental initiatives. CleanBeaches is the only one that sends us verified, per-kilogram impact reports. Our board renewed the partnership unanimously.",
+        "quote": "We sponsor dozens of environmental initiatives. paralies.org is the only one that sends us verified, per-kilogram impact reports. Our board renewed the partnership unanimously.",
         "name": "Anna M.",
         "role": "CSR Director, AEGEAN Airlines",
         "initials": "AM",
@@ -221,7 +221,7 @@
     "counterLabel": "plastic entered Greek waters since you opened this page",
     "cta": [
       { "label": "Sponsor a cleanup", "href": "/donate", "style": "primary" },
-      { "label": "Talk to us", "href": "mailto:fundraising@cleanbeaches.gr", "style": "outline" }
+      { "label": "Talk to us", "href": "mailto:fundraising@paralies.org", "style": "outline" }
     ]
   },
 
@@ -285,7 +285,7 @@
       "placeholder": "you@example.com",
       "submitLabel": "Subscribe"
     },
-    "copyright": "CleanBeaches Greece AMKE. All rights reserved."
+    "copyright": "paralies.org AMKE. All rights reserved."
   },
 
   "floatingDonate": {
@@ -312,7 +312,7 @@
     "donate": {
       "eyebrow": "Fuel the fleet",
       "headline": "Direct your support into machines, crews, and transparency.",
-      "body": "This initial pledge form captures intent so we can route you to the correct payment flow (Stripe, SEPA, or municipal co-funding). A CleanBeaches team member will follow up with the full compliance packet.",
+      "body": "This initial pledge form captures intent so we can route you to the correct payment flow (Stripe, SEPA, or municipal co-funding). A paralies.org team member will follow up with the full compliance packet.",
       "form": {
         "fields": [
           { "name": "name", "label": "Full name / Organization", "type": "text", "placeholder": "Maria Papadopoulou", "required": true },
@@ -332,7 +332,7 @@
     },
     "legal": {
       "eyebrow": "Compliance",
-      "body": "CleanBeaches Greece is legally conservative by design. These documents evolve as we progress through AMKE registration and begin public fundraising activities."
+      "body": "paralies.org is legally conservative by design. These documents evolve as we progress through AMKE registration and begin public fundraising activities."
     }
   }
 }

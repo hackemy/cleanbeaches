@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// CleanBeaches Greece -- Site data types
+// paralies.org -- Site data types
 // Single import point: `import { data, type SiteData } from '$lib/data/types'`
 // ---------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@
 
 _Last updated: January 2025_
 
-CleanBeaches Greece (operating as an Αστική Μη Κερδοσκοπική Εταιρεία – AMKE) respects your privacy and is building its
+paralies.org (operating as an Αστική Μη Κερδοσκοπική Εταιρεία – AMKE) respects your privacy and is building its
 systems to comply with the General Data Protection Regulation (EU) 2016/679 (GDPR) and Greek Law 4624/2019.
 
 ## Data We Collect
@@ -16,7 +16,7 @@ systems to comply with the General Data Protection Regulation (EU) 2016/679 (GDP
 - To analyze environmental impact and publish aggregated statistics
 
 ## Your Rights
-You may request access, correction, or deletion of your personal data at any time. Contact **privacy@cleanbeaches.gr** and we
+You may request access, correction, or deletion of your personal data at any time. Contact **privacy@paralies.org** and we
 will respond within 30 days.
 
 ## Data Retention & Security
@@ -31,4 +31,4 @@ We only share data with vetted processors required for operations (Stripe, AWS, 
 adequate safeguards under GDPR.
 
 ---
-For questions, email **privacy@cleanbeaches.gr**. We will update this policy as the organization formalizes its governance. 
+For questions, email **privacy@paralies.org**. We will update this policy as the organization formalizes its governance. 

@@ -1,0 +1,226 @@
+{
+  "site": {
+    "name": "",
+    "tagline": "",
+    "legalEntity": "",
+    "regions": "",
+    "logo": "",
+    "email": "",
+    "fundraisingEmail": "",
+    "phone": "",
+    "social": [
+      { "platform": "", "url": "" }
+    ]
+  },
+
+  "nav": {
+    "announcement": {
+      "text": "",
+      "linkLabel": "",
+      "linkHref": ""
+    },
+    "links": [
+      { "label": "", "href": "" }
+    ],
+    "cta": [
+      { "label": "", "href": "", "style": "" }
+    ],
+    "mobileCta": [
+      { "label": "", "href": "", "style": "" }
+    ]
+  },
+
+  "hero": {
+    "badge": "",
+    "headline": "",
+    "body": "",
+    "image": "",
+    "imageAlt": "",
+    "badgeOverlay": "",
+    "cta": [
+      { "label": "", "href": "", "style": "" }
+    ],
+    "stats": [
+      { "value": 0, "suffix": "", "label": "" }
+    ]
+  },
+
+  "impact": {
+    "eyebrow": "",
+    "headline": "",
+    "body": "",
+    "metrics": [
+      { "value": 0, "suffix": "", "label": "", "description": "" }
+    ],
+    "progress": {
+      "label": "",
+      "current": 0,
+      "goal": 0,
+      "unit": "",
+      "callout": ""
+    }
+  },
+
+  "howItWorks": {
+    "eyebrow": "",
+    "headline": "",
+    "body": "",
+    "steps": [
+      { "title": "", "description": "", "icon": "" }
+    ],
+    "cta": { "label": "", "href": "" }
+  },
+
+  "operations": {
+    "eyebrow": "",
+    "headline": "",
+    "body": "",
+    "items": [
+      {
+        "id": "",
+        "island": "",
+        "beach": "",
+        "type": "",
+        "impact": "",
+        "description": "",
+        "partners": [""],
+        "photo": ""
+      }
+    ]
+  },
+
+  "socialProof": {
+    "eyebrow": "",
+    "headline": "",
+    "testimonials": [
+      {
+        "quote": "",
+        "name": "",
+        "role": "",
+        "initials": "",
+        "color": ""
+      }
+    ]
+  },
+
+  "gallery": {
+    "eyebrow": "",
+    "headline": "",
+    "ctaLabel": "",
+    "previewCount": 0,
+    "photos": [
+      { "id": 0, "title": "", "location": "", "description": "", "image": "" }
+    ]
+  },
+
+  "partners": {
+    "eyebrow": "",
+    "headline": "",
+    "items": [""]
+  },
+
+  "donations": {
+    "eyebrow": "",
+    "headline": "",
+    "body": "",
+    "tiers": [
+      {
+        "title": "",
+        "amount": "",
+        "impact": "",
+        "perks": [""],
+        "cta": "",
+        "featured": false
+      }
+    ]
+  },
+
+  "ctaSection": {
+    "eyebrow": "",
+    "headline": "",
+    "body": "",
+    "dailyPollutionRate": 0,
+    "counterLabel": "",
+    "cta": [
+      { "label": "", "href": "", "style": "" }
+    ]
+  },
+
+  "volunteer": {
+    "eyebrow": "",
+    "headline": "",
+    "body": "",
+    "counter": { "value": 0, "suffix": "", "label": "" },
+    "checklist": [""],
+    "form": {
+      "fields": [
+        { "name": "", "label": "", "type": "", "placeholder": "", "required": false }
+      ],
+      "submitLabel": "",
+      "disclaimer": ""
+    }
+  },
+
+  "roadmap": {
+    "eyebrow": "",
+    "headline": "",
+    "phases": [
+      {
+        "phase": "",
+        "title": "",
+        "description": "",
+        "points": [""]
+      }
+    ]
+  },
+
+  "footer": {
+    "links": [
+      { "label": "", "href": "" }
+    ],
+    "newsletter": {
+      "headline": "",
+      "body": "",
+      "placeholder": "",
+      "submitLabel": ""
+    },
+    "copyright": ""
+  },
+
+  "floatingDonate": {
+    "label": "",
+    "href": ""
+  },
+
+  "pages": {
+    "gallery": {
+      "eyebrow": "",
+      "headline": "",
+      "body": ""
+    },
+    "problem": {
+      "eyebrow": "",
+      "headline": "",
+      "body": "",
+      "stats": [
+        { "value": 0, "suffix": "", "label": "" }
+      ]
+    },
+    "donate": {
+      "eyebrow": "",
+      "headline": "",
+      "body": "",
+      "form": {
+        "fields": [
+          { "name": "", "label": "", "type": "", "placeholder": "", "required": false }
+        ],
+        "submitLabel": "",
+        "disclaimer": ""
+      }
+    },
+    "legal": {
+      "eyebrow": "",
+      "body": ""
+    }
+  }
+}

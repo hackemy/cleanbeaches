@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const projectRoot = path.resolve(__dirname, '..')
 const sourceDir = path.join(projectRoot, 'public', 'evidence-source')
-const outputFile = path.join(projectRoot, 'src', 'data', 'geoMedia.json')
+const outputFile = path.join(projectRoot, 'src', 'lib', 'data', 'geoMedia.json')
 
 async function ensureSourceDir() {
   try {
@@ -87,7 +87,7 @@ async function main() {
   })
 
   await fs.writeFile(outputFile, JSON.stringify(merged, null, 2))
-  console.log(`✅ Generated ${merged.length} entries into src/data/geoMedia.json`)
+  console.log(`✅ Generated ${merged.length} entries into src/lib/data/geoMedia.json`)
 }
 
 main().catch((error) => {

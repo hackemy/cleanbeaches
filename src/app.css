@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', 'SF Pro Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Ocean depth palette */
+  --color-ocean-50: #ecfeff;
+  --color-ocean-100: #cffafe;
+  --color-ocean-200: #a5f3fc;
+  --color-ocean-300: #67e8f9;
+  --color-ocean-400: #22d3ee;
+  --color-ocean-500: #06b6d4;
+  --color-ocean-600: #0891b2;
+  --color-ocean-700: #0e7490;
+  --color-ocean-800: #155e75;
+  --color-ocean-900: #164e63;
+
+  /* Urgency / coral accents */
+  --color-coral-50: #fff7ed;
+  --color-coral-100: #ffedd5;
+  --color-coral-400: #fb923c;
+  --color-coral-500: #f97316;
+  --color-coral-600: #ea580c;
+
+  /* Sand / warm neutrals */
+  --color-sand-50: #fefce8;
+  --color-sand-100: #fef9c3;
+  --color-sand-200: #fef08a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply m-0 bg-sky-50/30 text-slate-900 font-sans leading-relaxed;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-2 outline-sky-500 outline-offset-4;
+  }
+
+  section {
+    @apply relative;
+  }
+}
+
+/* Scroll-reveal animation utilities */
+.sr-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.cta-gradient-bg {
+  background: linear-gradient(135deg, #0f172a, #0c4a6e, #0f172a);
+}
+
+.sr-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--sr-delay, 0ms);
+}

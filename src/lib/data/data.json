@@ -1,0 +1,338 @@
+{
+  "site": {
+    "name": "CleanBeaches Greece",
+    "tagline": "Clean beaches. Real impact.",
+    "legalEntity": "Αστική Μη Κερδοσκοπική Εταιρεία (υπό σύσταση)",
+    "regions": "Athens · Cyclades · Dodecanese",
+    "logo": "🏝️",
+    "email": "hello@cleanbeaches.gr",
+    "fundraisingEmail": "fundraising@cleanbeaches.gr",
+    "phone": "+30 210 000 0000 (HQ)",
+    "social": [
+      { "platform": "instagram", "url": "https://instagram.com" },
+      { "platform": "x", "url": "https://x.com" },
+      { "platform": "linkedin", "url": "https://linkedin.com" }
+    ]
+  },
+
+  "nav": {
+    "announcement": {
+      "text": "Next cleanup: **Milos, Cyclades** — 12 spots left.",
+      "linkLabel": "Join now →",
+      "linkHref": "/donate"
+    },
+    "links": [
+      { "label": "Mission", "href": "/" },
+      { "label": "Gallery", "href": "/gallery" },
+      { "label": "The Problem", "href": "/problem" },
+      { "label": "Map", "href": "/evidence-map" },
+      { "label": "Legal", "href": "/legal/privacy" }
+    ],
+    "cta": [
+      { "label": "See impact", "href": "#impact", "style": "outline" },
+      { "label": "Donate", "href": "/donate", "style": "primary" }
+    ],
+    "mobileCta": [
+      { "label": "Donate now", "href": "/donate", "style": "primary" },
+      { "label": "Volunteer", "href": "#volunteer", "style": "outline" }
+    ]
+  },
+
+  "hero": {
+    "badge": "700 tonnes of plastic enter Greek waters every year",
+    "headline": "We are building the fleet to <accent>stop it.</accent>",
+    "body": "CleanBeaches Greece deploys mechanical cleaning fleets, coordinates volunteer operations, and publishes every result. Transparent. Measurable. Unstoppable.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Clean beach in the Cyclades",
+    "badgeOverlay": "Next cleanup: Milos, Cyclades",
+    "cta": [
+      { "label": "Donate now", "href": "/donate", "style": "primary" },
+      { "label": "Become a volunteer", "href": "#volunteer", "style": "outline" }
+    ],
+    "stats": [
+      { "value": 12, "suffix": "", "label": "Islands committed" },
+      { "value": 24800, "suffix": " kg", "label": "Plastic removed" },
+      { "value": 140, "suffix": "%", "label": "Volunteer growth" }
+    ]
+  },
+
+  "impact": {
+    "eyebrow": "Impact dashboard",
+    "headline": "We track every kilogram we collect.",
+    "body": "Metrics update after each operation and sync to the public dashboard.",
+    "metrics": [
+      { "value": 24800, "suffix": " kg", "label": "Plastic removed", "description": "Pilot phase across Attica, Cyclades, and Sporades (2024 data)." },
+      { "value": 32, "suffix": " km", "label": "Coastline restored", "description": "Machine-assisted cleansing of high-traffic beaches." },
+      { "value": 1920, "suffix": "", "label": "Volunteer hours", "description": "Locals + visitors onboarded through municipalities." },
+      { "value": 4, "suffix": "", "label": "Custom machines", "description": "Tracked sifters adapted to rocky/pebble beaches." }
+    ],
+    "progress": {
+      "label": "2024 cleanup goal",
+      "current": 24.8,
+      "goal": 50,
+      "unit": "tonnes",
+      "callout": "Help us reach the 50-tonne milestone"
+    }
+  },
+
+  "howItWorks": {
+    "eyebrow": "Get involved",
+    "headline": "Three steps to cleaner beaches",
+    "body": "No experience needed. Join hundreds of volunteers making a measurable difference across the Greek islands.",
+    "steps": [
+      { "title": "Report a site", "description": "Spot pollution on a beach? Drop a pin on our map. Your report helps us prioritize where to deploy cleaning crews next.", "icon": "pin" },
+      { "title": "Join a cleanup", "description": "Sign up for the next event. We provide equipment, insurance, and transport. Just show up ready to make a difference.", "icon": "people" },
+      { "title": "Track your impact", "description": "Every kilogram is weighed and logged. Get your personal impact certificate and watch the cumulative results grow.", "icon": "chart" }
+    ],
+    "cta": { "label": "Sign up for the next cleanup", "href": "#volunteer" }
+  },
+
+  "operations": {
+    "eyebrow": "Field operations",
+    "headline": "Live programs across the islands.",
+    "body": "Each cleanup combines municipal funding, CSR sponsors, and volunteer task forces. We publish outcomes within 48 hours.",
+    "items": [
+      {
+        "id": "operation-milos",
+        "island": "Milos",
+        "beach": "Sarakiniko",
+        "type": "Hybrid (machinery + volunteers)",
+        "impact": "3.2 tons removed",
+        "description": "Tracked sifters handle pebbles while dive teams remove abandoned fishing gear around the cliffs.",
+        "partners": ["Municipality of Milos", "Cyclades Dive Club"],
+        "photo": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "operation-paros",
+        "island": "Paros",
+        "beach": "Kolymbithres",
+        "type": "Machine-led",
+        "impact": "1.1 tons removed",
+        "description": "Night operation to avoid daytime visitors, targeting microplastics using UV-tracked sieving.",
+        "partners": ["Region of South Aegean", "Paros Port Authority"],
+        "photo": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "operation-crete",
+        "island": "Crete",
+        "beach": "Falassarna",
+        "type": "Volunteer surge",
+        "impact": "900 kg removed",
+        "description": "Weekend blitz with local hotels funding logistics and glass separation for recycling.",
+        "partners": ["Chania Hoteliers Association", "Blue Flag Hellas"],
+        "photo": "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+
+  "socialProof": {
+    "eyebrow": "Real voices",
+    "headline": "Trusted by volunteers, municipalities, and partners",
+    "testimonials": [
+      {
+        "quote": "I signed up on a whim during my holiday in Milos. Three hours later I had helped remove 120 kg of fishing nets. I have never felt more connected to a place.",
+        "name": "Eleni K.",
+        "role": "Volunteer, Milos cleanup",
+        "initials": "EK",
+        "color": "from-ocean-400 to-ocean-600"
+      },
+      {
+        "quote": "CleanBeaches gave Paros something no municipal budget could: a transparent, measurable system that our citizens actually trust. The data they publish has helped us secure EU funding.",
+        "name": "Dimitris P.",
+        "role": "Deputy Mayor, Paros",
+        "initials": "DP",
+        "color": "from-sky-400 to-sky-600"
+      },
+      {
+        "quote": "We sponsor dozens of environmental initiatives. CleanBeaches is the only one that sends us verified, per-kilogram impact reports. Our board renewed the partnership unanimously.",
+        "name": "Anna M.",
+        "role": "CSR Director, AEGEAN Airlines",
+        "initials": "AM",
+        "color": "from-coral-400 to-coral-500"
+      }
+    ]
+  },
+
+  "gallery": {
+    "eyebrow": "Success gallery",
+    "headline": "See the difference in every operation.",
+    "ctaLabel": "View full gallery",
+    "previewCount": 4,
+    "photos": [
+      { "id": 1, "title": "Batsi Harbour, Andros", "location": "Cyclades", "description": "Mechanical sifter removed 2.1 tons of plastic pellets after a cargo spill.", "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80" },
+      { "id": 2, "title": "Vouliagmeni Sunset Sweep", "location": "Attica", "description": "Night operation targeting microplastics without disturbing beach bars.", "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" },
+      { "id": 3, "title": "Naoussa Fisher Gear Exchange", "location": "Paros", "description": "Fishing cooperatives trading ghost nets for recycling credits.", "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" },
+      { "id": 4, "title": "Sarakiniko Before / After", "location": "Milos", "description": "Combined volunteer + machine sweep ahead of tourist season.", "image": "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1200&q=80" },
+      { "id": 5, "title": "Chania Posidonia Defense", "location": "Crete", "description": "Custom rake preserves sea grass while lifting heavy litter.", "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" },
+      { "id": 6, "title": "Skiathos Runway Beach", "location": "Sporades", "description": "Partnership with airport authority to clean approach-side shoreline.", "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" }
+    ]
+  },
+
+  "partners": {
+    "eyebrow": "Our allies",
+    "headline": "Backed by municipalities, foundations, and industry leaders",
+    "items": [
+      "Region South Aegean",
+      "Cyclades Ports",
+      "Blue Flag Hellas",
+      "Ocean Conservancy",
+      "AEGEAN CSR",
+      "Latsis Foundation"
+    ]
+  },
+
+  "donations": {
+    "eyebrow": "Donation packages",
+    "headline": "Pick an impact level.",
+    "body": "Recurring sponsors receive telemetry packets, receipts, and brand placement on machines.",
+    "tiers": [
+      {
+        "title": "Beach cleanup",
+        "amount": "1,200",
+        "impact": "Cleans 500 m of beach",
+        "perks": ["One-day volunteer deployment", "Impact photo set", "Public dashboard badge"],
+        "cta": "Fund this cleanup",
+        "featured": false
+      },
+      {
+        "title": "Machine lease",
+        "amount": "10,400",
+        "impact": "Removes 3+ tonnes of waste",
+        "perks": ["Tracked sifter + operator", "Real-time telemetry feed", "Press kit + co-branding"],
+        "cta": "Deploy a machine",
+        "featured": true
+      },
+      {
+        "title": "Island guardian",
+        "amount": "48,000",
+        "impact": "Protects an entire island",
+        "perks": ["Season-long program", "Custom reporting + ESG alignment", "Board-level quarterly brief"],
+        "cta": "Protect an island",
+        "featured": false
+      }
+    ]
+  },
+
+  "ctaSection": {
+    "eyebrow": "The clock is ticking",
+    "headline": "Every day without action, another 1.9 tonnes enters the Aegean.",
+    "body": "Donations activate machinery leases, pay machine operators, and cover POSIDONIA-safe disposal. We publish every receipt and outcome in the transparency dashboard.",
+    "dailyPollutionRate": 1.918,
+    "counterLabel": "plastic entered Greek waters since you opened this page",
+    "cta": [
+      { "label": "Sponsor a cleanup", "href": "/donate", "style": "primary" },
+      { "label": "Talk to us", "href": "mailto:fundraising@cleanbeaches.gr", "style": "outline" }
+    ]
+  },
+
+  "volunteer": {
+    "eyebrow": "Join the movement",
+    "headline": "Be part of the next cleanup",
+    "body": "Sign up to receive SMS deploy alerts, logistics briefings, and post-operation transparency decks. We coordinate with municipalities so every action is permitted, insured, and safe.",
+    "counter": { "value": 340, "suffix": "+", "label": "volunteers already signed up" },
+    "checklist": [
+      "SMS alerts for upcoming cleanups",
+      "Full insurance coverage",
+      "Personal impact certificate",
+      "Access to the volunteer community"
+    ],
+    "form": {
+      "fields": [
+        { "name": "name", "label": "Full name", "type": "text", "placeholder": "Athina Karidi", "required": true },
+        { "name": "email", "label": "Email", "type": "email", "placeholder": "you@example.com", "required": true },
+        { "name": "region", "label": "Preferred region", "type": "select", "options": ["Cyclades", "Dodecanese", "Ionian", "Crete", "Attica"], "required": false }
+      ],
+      "submitLabel": "Join the roster",
+      "disclaimer": "We will never spam or sell your data. GDPR-compliant opt-out anytime."
+    }
+  },
+
+  "roadmap": {
+    "eyebrow": "2025 rollout",
+    "headline": "Scaling from pilots to national coverage.",
+    "phases": [
+      {
+        "phase": "Q1 2025",
+        "title": "Legal + Fleet Setup",
+        "description": "Finalize AMKE registration, procure first two sifters, onboard core ops team.",
+        "points": ["Articles + GEMI complete", "Stripe + finance stack live", "Fleet tests in Attica"]
+      },
+      {
+        "phase": "Q2 2025",
+        "title": "Island Partnerships",
+        "description": "Multi-island agreements for recurring machine + volunteer cleanups.",
+        "points": ["Milos, Paros, Naxos signed", "Regional co-funding secured", "Volunteer academy launch"]
+      },
+      {
+        "phase": "Q3-Q4 2025",
+        "title": "National Dashboard",
+        "description": "Public data portal with live KPIs, transparency docs, and open impact API.",
+        "points": ["Telemetry streaming to dashboard", "Impact API for partners", "Annual transparency report"]
+      }
+    ]
+  },
+
+  "footer": {
+    "links": [
+      { "label": "Impact Gallery", "href": "/gallery" },
+      { "label": "Evidence Map", "href": "/evidence-map" },
+      { "label": "Terms of Service", "href": "/legal/terms" },
+      { "label": "Privacy Policy", "href": "/legal/privacy" }
+    ],
+    "newsletter": {
+      "headline": "Stay updated",
+      "body": "Get monthly impact reports and cleanup announcements.",
+      "placeholder": "you@example.com",
+      "submitLabel": "Subscribe"
+    },
+    "copyright": "CleanBeaches Greece AMKE. All rights reserved."
+  },
+
+  "floatingDonate": {
+    "label": "Donate",
+    "href": "/donate"
+  },
+
+  "pages": {
+    "gallery": {
+      "eyebrow": "Impact gallery",
+      "headline": "Every cleanup documented end-to-end.",
+      "body": "Browse verified photo sets, drone imagery, and telemetry snapshots before they hit the transparency dashboard."
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "headline": "What we are up against.",
+      "body": "Real, unfiltered shots from the Greek coastline. Each upload feeds the case for mechanical fleets, municipal funding, and EU environmental interventions.",
+      "stats": [
+        { "value": 700, "suffix": " t/yr", "label": "Plastic entering Greek waters" },
+        { "value": 12, "suffix": "%", "label": "Of coastline with cleanup coverage" },
+        { "value": 94, "suffix": "%", "label": "Of marine debris is microplastics" }
+      ]
+    },
+    "donate": {
+      "eyebrow": "Fuel the fleet",
+      "headline": "Direct your support into machines, crews, and transparency.",
+      "body": "This initial pledge form captures intent so we can route you to the correct payment flow (Stripe, SEPA, or municipal co-funding). A CleanBeaches team member will follow up with the full compliance packet.",
+      "form": {
+        "fields": [
+          { "name": "name", "label": "Full name / Organization", "type": "text", "placeholder": "Maria Papadopoulou", "required": true },
+          { "name": "email", "label": "Email", "type": "email", "placeholder": "you@example.com", "required": true },
+          { "name": "amount", "label": "Preferred contribution amount (€)", "type": "number", "placeholder": "10400", "required": false },
+          { "name": "channel", "label": "Funding channel", "type": "select", "options": [
+            { "value": "stripe", "label": "Stripe (card / Apple Pay)" },
+            { "value": "sepa", "label": "SEPA transfer" },
+            { "value": "grant", "label": "Grant / CSR partnership" },
+            { "value": "municipal", "label": "Municipal contract" }
+          ], "required": true },
+          { "name": "message", "label": "Message / intent", "type": "textarea", "placeholder": "Tell us about the coastline or program you want to underwrite", "required": false }
+        ],
+        "submitLabel": "Submit pledge",
+        "disclaimer": "No payment is processed on this screen. We reply within one business day with the secure payment link."
+      }
+    },
+    "legal": {
+      "eyebrow": "Compliance",
+      "body": "CleanBeaches Greece is legally conservative by design. These documents evolve as we progress through AMKE registration and begin public fundraising activities."
+    }
+  }
+}
